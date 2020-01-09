@@ -18,7 +18,19 @@ namespace BasicCalculator
         private readonly Roots root = new Roots();
         private readonly Cubes cube = new Cubes();
 
-        public dynamic result;
+        private dynamic result;
+
+        public dynamic Result
+        {
+            get
+            {
+                return result;
+            }
+            set
+            {
+                result = value;
+            }
+        }
 
         public dynamic Sum(dynamic a, dynamic b)
         {

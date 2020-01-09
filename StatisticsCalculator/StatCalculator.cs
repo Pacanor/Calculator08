@@ -1,14 +1,16 @@
 ﻿using System;
 using BasicCalculator;
+using StatMean;
 using StatOperations;
 
 namespace StatisticsCalculator
 {
-    public class StatCalculator : Calculator
+    public class StatCalculator : Calculator, IFindMean
     {
+        private readonly FindMean mean = new FindMean();
         public dynamic Mean(dynamic values)
         {
-            return StatOperations.StatMean.Mean(values);
+            return mean.Mean(values);
         }
 
     }

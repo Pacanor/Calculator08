@@ -2,7 +2,6 @@
 
 namespace Multiply
 {
-
     public class Multiplies : IMultiplies
     {
         public dynamic result;

@@ -2,8 +2,6 @@
 
 namespace Subtract
 {
-    
-
     public class Subtracts : ISubtracts
     {
         public dynamic result;

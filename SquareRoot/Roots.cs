@@ -2,8 +2,6 @@
 
 namespace SquareRoot
 {
-    
-
     public class Roots : IRoots
     {
         public dynamic result;

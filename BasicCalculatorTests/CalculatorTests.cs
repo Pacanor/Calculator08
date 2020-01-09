@@ -93,6 +93,7 @@ namespace BasicCalculator.Tests
             Assert.AreEqual(y, z);
             //Assert.AreEqual(57.76, calc.Squared(c));
         }
+
         /*
                 [TestMethod()]
                 public void RootTest()

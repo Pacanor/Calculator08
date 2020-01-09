@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Add
+﻿namespace Add
 {
     public interface IAdds
     {
@@ -10,5 +6,4 @@ namespace Add
 
         public dynamic Sum(dynamic a);
     }
-
 }

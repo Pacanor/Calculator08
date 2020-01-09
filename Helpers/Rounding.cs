@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Helpers
 {
@@ -10,10 +8,12 @@ namespace Helpers
         {
             return Math.Round(a, 2, MidpointRounding.ToEven);
         }
+
         public static dynamic RoundFourDecimals(dynamic a)
         {
             return Math.Round(a, 4, MidpointRounding.ToEven);
         }
+
         public static dynamic RoundFiveDecimals(dynamic a)
         {
             return Math.Round(a, 5, MidpointRounding.ToEven);

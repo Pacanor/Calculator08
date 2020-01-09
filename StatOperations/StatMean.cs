@@ -1,7 +1,4 @@
-﻿using System;
-using BasicCalculator;
-using Helpers;
-using Operations;
+﻿using Operations;
 
 namespace StatOperations
 {

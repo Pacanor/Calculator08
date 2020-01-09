@@ -2,7 +2,7 @@
 
 namespace Cube
 {
-     public class Cubes : ICubes
+    public class Cubes : ICubes
     {
         public dynamic result;
 

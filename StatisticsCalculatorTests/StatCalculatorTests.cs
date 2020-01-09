@@ -1,8 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using StatisticsCalculator;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace StatisticsCalculator.Tests
 {

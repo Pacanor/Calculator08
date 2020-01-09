@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatOperations", "StatOpera
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpers", "Helpers\Helpers.csproj", "{ACF76B9E-CE8C-4CCA-94B7-4F875FA52C2D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatMean", "StatMean\StatMean.csproj", "{B116025F-DCF2-4BFF-A213-F0A32D6B8D70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{ACF76B9E-CE8C-4CCA-94B7-4F875FA52C2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACF76B9E-CE8C-4CCA-94B7-4F875FA52C2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACF76B9E-CE8C-4CCA-94B7-4F875FA52C2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B116025F-DCF2-4BFF-A213-F0A32D6B8D70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B116025F-DCF2-4BFF-A213-F0A32D6B8D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B116025F-DCF2-4BFF-A213-F0A32D6B8D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B116025F-DCF2-4BFF-A213-F0A32D6B8D70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

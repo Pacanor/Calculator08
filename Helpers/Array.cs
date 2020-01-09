@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Helpers
+﻿namespace Helpers
 {
     public class Array
     {

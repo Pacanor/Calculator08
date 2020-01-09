@@ -1,5 +1,6 @@
 ﻿using System;
 using BasicCalculator;
+using StatOperations;
 
 namespace StatisticsCalculator
 {
@@ -7,10 +8,7 @@ namespace StatisticsCalculator
     {
         public dynamic Mean(dynamic values)
         {
-            var sum = Sum(values);
-            var valueCount = values.Length;
-            result = Quotient(sum, valueCount);
-            return result;
+            return StatOperations.StatMean.Mean(values);
         }
 
     }

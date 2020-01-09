@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using BasicCalculator;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BasicCalculator.Tests
 {
@@ -15,97 +16,234 @@ namespace BasicCalculator.Tests
         private readonly int[] h = { 30, 3, 2, 5 };
         private readonly double i = 6.8;
         private readonly double j = 3.4;
+        private readonly int k = 225;
+        private readonly double l = 57.76;
 
         private readonly Calculator calc = new Calculator();
 
         [TestMethod()]
-        public void SumTest()
+        public void SumIntTest()
         {
             Assert.AreEqual(18, calc.Sum(a, b));
-            Assert.AreEqual(10.9, calc.Sum(c, d));
         }
 
         [TestMethod()]
-        public void SumArrayTest()
+        public void SumIntArrayTest()
         {
-            Assert.AreEqual(10.2, calc.Sum(e));
             Assert.AreEqual(40, calc.Sum(f));
         }
 
         [TestMethod()]
-        public void DifferenceTest()
+        public void DifferenceIntTest()
         {
             Assert.AreEqual(12, calc.Difference(a, b));
-            Assert.AreEqual(4.1, calc.Difference(c, d));
         }
 
         [TestMethod()]
-        public void DifferenceArrayTest()
+        public void DifferenceIntArrayTest()
         {
-            Assert.AreEqual(-10.2, calc.Difference(e));
             Assert.AreEqual(-40, calc.Difference(f));
         }
 
         [TestMethod()]
-        public void TimesTest()
+        public void TimesIntTest()
         {
             Assert.AreEqual(45, calc.Times(a, b));
-            Assert.AreEqual(25.5, calc.Times(c, d));
         }
 
         [TestMethod()]
-        public void TimesArrayTest()
+        public void TimesIntArrayTest()
         {
-            Assert.AreEqual(23.25, calc.Times(e));
             Assert.AreEqual(900, calc.Times(f));
         }
 
         [TestMethod()]
-        public void QuotientTest()
+        public void QuotientIntTest()
         {
             Assert.AreEqual(5, calc.Quotient(a, b));
-            Assert.AreEqual(2, calc.Quotient(i, j));
         }
 
         [TestMethod()]
-        public void QuotientTest1()
+        public void QuotientIntArrayTest()
         {
-            Assert.AreEqual(1.5, calc.Quotient(g));
             Assert.AreEqual(1, calc.Quotient(h));
         }
 
         [TestMethod()]
-        public void SquaredTest()
+        public void SquaredIntTest()
         {
-            /*
-            int[] x = new int[f.Length];
-            int[] y = Sq.Squared(f);
-            int i = 0;
-            foreach (int a in f)
-            {
-                x[i] = Sq.Squared(a);
-                Assert.AreEqual(x[i], y[i]);
-                i++;
-            }
-            */
             int y = a * a;
             int z = calc.Squared(a);
             Assert.AreEqual(y, z);
-            //Assert.AreEqual(57.76, calc.Squared(c));
         }
 
-        /*
-                [TestMethod()]
-                public void RootTest()
-                {
-                    Assert.Fail();
-                }
+        [TestMethod()]
+        public void CubedIntTest()
+        {
+            int y = a * a * a;
+            int z = calc.Cubed(a);
+            Assert.AreEqual(y, z);
+        }
 
-                [TestMethod()]
-                public void CubedTest()
-                {
-                    Assert.Fail();
-                }
-        */
+        [TestMethod()]
+        public void RootIntTest()
+        {
+            Assert.AreEqual(15, calc.Root(k));
+        }
+
+        [TestMethod()]
+        public void SquaredIntArrayTest()
+        {
+            int[] x = new int[f.Length];
+            int[] y = calc.Squared(f);
+            int i = 0;
+            foreach (int a in f)
+            {
+                x[i] = calc.Squared(a);
+                Assert.AreEqual(x[i], y[i]);
+                i++;
+            }
+        }
+
+        [TestMethod()]
+        public void CubedIntArrayTest()
+        {
+            int[] x = new int[f.Length];
+            int[] y = calc.Cubed(f);
+            int i = 0;
+            foreach (int a in f)
+            {
+                x[i] = calc.Cubed(a);
+                Assert.AreEqual(x[i], y[i]);
+                i++;
+            }
+        }
+
+        [TestMethod()]
+        public void RootIntArrayTest()
+        {
+            double[] x = new double[f.Length];
+            double[] y = calc.Root(f);
+            int i = 0;
+            foreach (int a in f)
+            {
+                x[i] = calc.Root(a);
+                Assert.AreEqual(x[i], y[i]);
+                i++;
+            }
+        }
+
+        //Doubles
+        [TestMethod()]
+        public void SumDoublesTest()
+        {
+            Assert.AreEqual(10.9, calc.Sum(c, d));
+        }
+
+        [TestMethod()]
+        public void SumDoublesArrayTest()
+        {
+            Assert.AreEqual(10.2, calc.Sum(e));
+        }
+
+        [TestMethod()]
+        public void DifferenceDoublesTest()
+        {
+            Assert.AreEqual(4.1, calc.Difference(c, d));
+        }
+
+        [TestMethod()]
+        public void DifferenceDoublesArrayTest()
+        {
+            Assert.AreEqual(-10.2, calc.Difference(e));
+        }
+
+        [TestMethod()]
+        public void TimesDoublesTest()
+        {
+            Assert.AreEqual(25.5, calc.Times(c, d));
+        }
+
+        [TestMethod()]
+        public void TimesDoublesArrayTest()
+        {
+            Assert.AreEqual(23.25, calc.Times(e));
+        }
+
+        [TestMethod()]
+        public void QuotientDoublesTest()
+        {
+            Assert.AreEqual(2, calc.Quotient(i, j));
+        }
+
+        [TestMethod()]
+        public void QuotientDoublesArrayTest()
+        {
+            Assert.AreEqual(1.5, calc.Quotient(g));
+        }
+
+        [TestMethod()]
+        public void SquaredDoublesTest()
+        {
+            double y = c * c;
+            double z = calc.Squared(c);
+            Assert.AreEqual(y, z);
+        }
+
+        [TestMethod()]
+        public void CubedDoublesTest()
+        {
+            double y = c*c*c;
+            double z = calc.Cubed(c);
+            Assert.AreEqual(y, z);
+        }
+
+        [TestMethod()]
+        public void RootDoublesTest()
+        {
+            Assert.AreEqual(7.6, calc.Root(l));
+        }
+
+        [TestMethod()]
+        public void SquaredDoublesArrayTest()
+        {
+            double[] x = new double[e.Length];
+            double[] y = calc.Squared(e);
+            int i = 0;
+            foreach (double a in e)
+            {
+                x[i] = calc.Squared(a);
+                Assert.AreEqual(x[i], y[i]);
+                i++;
+            }
+        }
+
+        [TestMethod()]
+        public void CubedDoublesArrayTest()
+        {
+            double[] x = new double[e.Length];
+            double[] y = calc.Cubed(e);
+            int i = 0;
+            foreach (double a in e)
+            {
+                x[i] = calc.Cubed(a);
+                Assert.AreEqual(x[i], y[i]);
+                i++;
+            }
+        }
+
+        [TestMethod()]
+        public void RootDoublesArrayTest()
+        {
+            double[] x = new double[e.Length];
+            double[] y = calc.Root(e);
+            int i = 0;
+            foreach (double a in e)
+            {
+                x[i] = calc.Root(a);
+                Assert.AreEqual(x[i], y[i]);
+                i++;
+            }
+        }
     }
 }

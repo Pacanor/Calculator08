@@ -1,5 +1,6 @@
 ﻿using System;
 using BasicCalculator;
+using Helpers;
 using Operations;
 
 namespace StatOperations
@@ -9,7 +10,7 @@ namespace StatOperations
         public static dynamic Mean(dynamic values)
         {
             var sum = Addition.Sum(values);
-            var valueCount = values.Length;
+            var valueCount = Helpers.Array.Length(values);
             return Division.Quotient(sum, valueCount);
         }
     }

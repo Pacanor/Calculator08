@@ -27,13 +27,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicCalculatorTests", "Bas
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatisticsCalculator", "StatisticsCalculator\StatisticsCalculator.csproj", "{C095DF23-DB0F-4361-BC7F-E586B5A8B8DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatisticsCalculatorTests", "StatisticsCalculatorTests\StatisticsCalculatorTests.csproj", "{572EF08E-B753-4480-8B15-B1C9E0A25833}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatisticsCalculatorTests", "StatisticsCalculatorTests\StatisticsCalculatorTests.csproj", "{572EF08E-B753-4480-8B15-B1C9E0A25833}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatOperations", "StatOperations\StatOperations.csproj", "{61D69913-95B3-44F1-AE24-493009B3D692}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatOperations", "StatOperations\StatOperations.csproj", "{61D69913-95B3-44F1-AE24-493009B3D692}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpers", "Helpers\Helpers.csproj", "{ACF76B9E-CE8C-4CCA-94B7-4F875FA52C2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Helpers", "Helpers\Helpers.csproj", "{ACF76B9E-CE8C-4CCA-94B7-4F875FA52C2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatMean", "StatMean\StatMean.csproj", "{B116025F-DCF2-4BFF-A213-F0A32D6B8D70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatMean", "StatMean\StatMean.csproj", "{B116025F-DCF2-4BFF-A213-F0A32D6B8D70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatOperationsTests", "StatOperationsTests\StatOperationsTests.csproj", "{7635837F-0269-4D67-B88E-1E71CC626D66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatStandardDev", "StatStandardDev\StatStandardDev.csproj", "{E6645390-1AA5-401A-B91D-A728EDA80D79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +109,14 @@ Global
 		{B116025F-DCF2-4BFF-A213-F0A32D6B8D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B116025F-DCF2-4BFF-A213-F0A32D6B8D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B116025F-DCF2-4BFF-A213-F0A32D6B8D70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7635837F-0269-4D67-B88E-1E71CC626D66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7635837F-0269-4D67-B88E-1E71CC626D66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7635837F-0269-4D67-B88E-1E71CC626D66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7635837F-0269-4D67-B88E-1E71CC626D66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6645390-1AA5-401A-B91D-A728EDA80D79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6645390-1AA5-401A-B91D-A728EDA80D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6645390-1AA5-401A-B91D-A728EDA80D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6645390-1AA5-401A-B91D-A728EDA80D79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

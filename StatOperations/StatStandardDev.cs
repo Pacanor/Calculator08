@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Operations;
+﻿using Operations;
 
 namespace StatOperations
 {
@@ -11,7 +8,7 @@ namespace StatOperations
         {
             double variance = StatVariance.Variance(values);
             double standDev = SqRt.Root(variance);
-            
+
             return standDev;
         }
     }

@@ -1,5 +1,4 @@
-﻿using StatisticsCalculator;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace StatisticsCalculator.Tests
 {
@@ -15,7 +14,6 @@ namespace StatisticsCalculator.Tests
         [TestMethod()]
         public void MeanIntTest()
         {
-
             var mean = statCalc.Mean(values);
             Assert.AreEqual(3, mean);
         }
@@ -33,7 +31,7 @@ namespace StatisticsCalculator.Tests
             var standDev = statCalc.StandDev(values);
             Assert.AreEqual(1.41421, Helpers.Rounding.RoundFiveDecimals(standDev));
         }
-        
+
         [TestMethod()]
         public void ZScoreIntTest()
         {
@@ -44,7 +42,6 @@ namespace StatisticsCalculator.Tests
         [TestMethod()]
         public void MeanDoubleTest()
         {
-
             var mean = statCalc.Mean(doubleVal);
             Assert.AreEqual(3.3, mean);
         }

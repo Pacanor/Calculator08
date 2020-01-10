@@ -1,5 +1,4 @@
-﻿using BasicCalculator;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BasicCalculator.Tests
 {
@@ -194,7 +193,7 @@ namespace BasicCalculator.Tests
         [TestMethod()]
         public void CubedDoublesTest()
         {
-            double y = c*c*c;
+            double y = c * c * c;
             double z = calc.Cubed(c);
             Assert.AreEqual(y, z);
         }
@@ -246,6 +245,7 @@ namespace BasicCalculator.Tests
                 i++;
             }
         }
+
         [TestMethod()]
         public void DivideByZeroTest()
         {

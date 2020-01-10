@@ -5,10 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BasicCalculator\BasicCalculator.csproj" />
-    <ProjectReference Include="..\StatMean\StatMean.csproj" />
     <ProjectReference Include="..\StatOperations\StatOperations.csproj" />
-    <ProjectReference Include="..\StatStandardDev\StatStandardDev.csproj" />
   </ItemGroup>
 
 </Project>

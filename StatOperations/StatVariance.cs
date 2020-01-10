@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Operations;
+﻿using Operations;
 
 namespace StatOperations
 {
@@ -12,8 +9,8 @@ namespace StatOperations
             double mean = StatMean.Mean(values);
             double[] squaredDeviation = new double[Helpers.Array.Length(values)]; ;
             int i = 0;
-            
-            foreach(int a in values)
+
+            foreach (int a in values)
             {
                 squaredDeviation[i] = Sq.Squared(Subtraction.Difference(a, mean));
                 i++;

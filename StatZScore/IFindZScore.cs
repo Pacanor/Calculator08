@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace StatZScore
+﻿namespace StatZScore
 {
     public interface IFindZScore
     {

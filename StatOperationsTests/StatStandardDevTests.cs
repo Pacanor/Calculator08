@@ -1,8 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using StatOperations;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace StatOperations.Tests
 {
@@ -16,6 +12,5 @@ namespace StatOperations.Tests
             var standDev = StatStandardDev.StandDev(values);
             Assert.AreEqual(1.41421, Helpers.Rounding.RoundFiveDecimals(standDev));
         }
-
     }
 }

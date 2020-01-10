@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace StatVariance
+﻿namespace StatVariance
 {
     public interface IFindVariance
     {

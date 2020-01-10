@@ -9,7 +9,6 @@ namespace StatOperations
     {
         public static double Variance(dynamic values)
         {
-            double variance;
             double mean = StatMean.Mean(values);
             double[] squaredDeviation = new double[Helpers.Array.Length(values)]; ;
             int i = 0;
@@ -19,9 +18,7 @@ namespace StatOperations
                 squaredDeviation[i] = Sq.Squared(Subtraction.Difference(a, mean));
                 i++;
             }
-            double sum = Addition.Sum(squaredDeviation);
-            variance = Division.Quotient(sum, Helpers.Array.Length(values));
-            
+            double variance = StatMean.Mean(squaredDeviation);
             return variance;
         }
     }

@@ -8,7 +8,8 @@ namespace StatOperations
         {
             var sum = Addition.Sum(values);
             var valueCount = Helpers.Array.Length(values);
-            return Division.Quotient(sum, valueCount);
+            var mean = Division.Quotient(sum, valueCount);
+            return mean;
         }
     }
 }

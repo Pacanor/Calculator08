@@ -10,6 +10,7 @@
     <ProjectReference Include="..\StatMean\StatMean.csproj" />
     <ProjectReference Include="..\StatOperations\StatOperations.csproj" />
     <ProjectReference Include="..\StatStandardDev\StatStandardDev.csproj" />
+    <ProjectReference Include="..\StatZScore\StatZScore.csproj" />
   </ItemGroup>
 
 </Project>

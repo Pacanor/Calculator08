@@ -41,6 +41,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatStandardDev", "StatStan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatVariance", "ClassLibrary1\StatVariance.csproj", "{6EF3A4CA-3C15-4276-BF66-AACF9FC1E978}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatZScore", "StatZScore\StatZScore.csproj", "{7F4E4E8A-FACE-4C05-A178-22A0AC96B1DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{6EF3A4CA-3C15-4276-BF66-AACF9FC1E978}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EF3A4CA-3C15-4276-BF66-AACF9FC1E978}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EF3A4CA-3C15-4276-BF66-AACF9FC1E978}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F4E4E8A-FACE-4C05-A178-22A0AC96B1DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F4E4E8A-FACE-4C05-A178-22A0AC96B1DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F4E4E8A-FACE-4C05-A178-22A0AC96B1DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F4E4E8A-FACE-4C05-A178-22A0AC96B1DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

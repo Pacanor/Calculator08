@@ -18,6 +18,7 @@ namespace BasicCalculator.Tests
         private readonly double j = 3.4;
         private readonly int k = 225;
         private readonly double l = 57.76;
+        private readonly int m = 0;
 
         private readonly Calculator calc = new Calculator();
 
@@ -244,6 +245,11 @@ namespace BasicCalculator.Tests
                 Assert.AreEqual(x[i], y[i]);
                 i++;
             }
+        }
+        [TestMethod()]
+        public void DivideByZeroTest()
+        {
+            Assert.ThrowsException<System.DivideByZeroException>(() => calc.Quotient(a, m));
         }
     }
 }

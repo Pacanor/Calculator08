@@ -9,9 +9,8 @@ namespace StatOperations
     {
         public static double StandDev(dynamic values)
         {
-            double standDev;
             double variance = StatVariance.Variance(values);
-            standDev = SqRt.Root(variance);
+            double standDev = SqRt.Root(variance);
             
             return standDev;
         }
